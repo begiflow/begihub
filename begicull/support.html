@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BegiCull Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    line-height: 1.55;
+    color: #1d1d1f;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; background: #1c1c1e; }
+    a { color: #6cb6ff; }
+    code { background: #2c2c2e; }
+  }
+  h1 { font-size: 28px; margin-bottom: 40px; }
+  h2 { font-size: 19px; margin-top: 36px; }
+  ol, ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: #f2f2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+  }
+  dt { font-weight: 600; margin-top: 18px; }
+  dd { margin: 4px 0 0; color: inherit; }
+</style>
+</head>
+<body>
+<h1>BegiCull Support</h1>
+
+<p>BegiCull is a keyboard-first video player for culling folders of clips on macOS.</p>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Click <strong>Open Folder…</strong> (⌘O) or drop a folder on the window.</li>
+  <li>Each clip plays as you reach it. <strong>Y</strong> accepts, <strong>N</strong> rejects,
+    <strong>← →</strong> move between clips.</li>
+  <li><strong>⌘E</strong> copies accepted clips to a <code>Selects</code> folder inside the
+    project.</li>
+  <li><strong>⌘⇧⌫</strong> moves rejected clips to the Trash (after asking).</li>
+</ol>
+<p>Press <strong>?</strong> in the app, or choose <strong>Help ▸ BegiCull Help</strong>, for
+every shortcut.</p>
+
+<h2>Common questions</h2>
+<dl>
+  <dt>Where are my ratings saved?</dt>
+  <dd>In <code>BegiCull.json</code> inside the folder you opened. Move the folder and its
+    ratings move with it.</dd>
+
+  <dt>A rejected clip wasn't moved to the Trash.</dt>
+  <dd>Drives formatted ExFAT or FAT (most camera cards) and some network shares have no Trash.
+    BegiCull then asks whether to delete those clips permanently instead; choose
+    <em>Keep Files</em> to leave them where they are.</dd>
+
+  <dt>Which formats are supported?</dt>
+  <dd><code>.mov</code>, <code>.mp4</code> and <code>.m4v</code> — anything macOS itself can
+    play in those containers.</dd>
+
+  <dt>I bought BegiCull Pro on another Mac.</dt>
+  <dd>Choose <strong>BegiCull ▸ Restore Purchases</strong>.</dd>
+
+  <dt>Reset the app.</dt>
+  <dd>Quit BegiCull, then delete <code>BegiCull.json</code> from a project folder to clear its
+    ratings, or right-click a project on the Home screen ▸ Remove from Recent Projects.</dd>
+</dl>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:chutien.it@gmail.com">chutien.it@gmail.com</a> with your macOS version,
+BegiCull version (BegiCull ▸ About BegiCull) and what happened.</p>
+</body>
+</html>
